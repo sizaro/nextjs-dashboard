@@ -1,4 +1,4 @@
-{
+{// why is the error reflecting this line
   "compilerOptions": {
     "target": "ES2020",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -20,8 +20,11 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@/*": ["./*"],
+      "@heroicons/react/*": ["node_modules/@heroicons/react/*"]
+    },
+    "typeRoots": ["node_modules/@types", "./node_modules"],
+    "types": ["next", "next/navigation"]
   },
   "include": [
     "next-env.d.ts",

@@ -21,7 +21,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
-      "@heroicons/react/*": ["node_modules/@heroicons/react/*"]
+      "@heroicons/react/*": ["node_modules/@heroicons/react/*"],
+      "@auth/core": ["node_modules/@auth/core"],
+      "next-auth": ["node_modules/next-auth"]
     },
     "typeRoots": ["node_modules/@types", "./node_modules"],
     "types": ["next", "next/navigation"]
@@ -33,6 +35,6 @@
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.ts",
     "scripts/seed.js"
-  ],
+, "next.config.mjs"  ],
   "exclude": ["node_modules"]
 }
